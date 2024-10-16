@@ -12,6 +12,10 @@ li, ul {
     list-style: none;
 }
 
+a, button {
+    text-decoration: none;
+}
+
 .container {
     margin: 0 auto;
     padding-inline: 1rem;
@@ -25,6 +29,11 @@ li, ul {
     h1 {
         font-weight: 900;
     }
+
+    p {
+        font-weight: 600;
+        font-size: .7rem;
+    }
 }
 
 .todo-list {
@@ -37,7 +46,7 @@ li, ul {
 
 .todo-form {
     display: flex;
-    position: sticky;
+    position: relative;
     margin-bottom: 1rem;
 
     .todo-input {
@@ -57,7 +66,7 @@ li, ul {
             outline: none;
         }
 
-        &:active, &:focus-visible ~ .todo-btn{
+        &:hover, &:active, &:focus-visible ~ .todo-btn{
             box-shadow: 0 0 10px #00000033;
             outline: none;
         }
