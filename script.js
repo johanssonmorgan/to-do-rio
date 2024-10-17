@@ -5,7 +5,7 @@ toDoForm.addEventListener('submit', e => {
     
     const formInput = document.querySelector('#todo-input');
     
-    if(formInput.value == '') {
+    if(formInput.value.trim() == '') {
         return
     }
 
